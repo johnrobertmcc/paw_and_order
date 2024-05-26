@@ -1,0 +1,19 @@
+.pricing table {
+  width: 100%;
+}
+
+.pricing th {
+  text-align: center;
+  border: 1px solid #00000010;
+}
+
+.pricing td {
+    border: 1px solid gray;
+    border-collapse: none;
+    text-align: center;
+}
+
+.pricing em {
+  font-style: italic;
+  font-size: 0.8rem;
+}

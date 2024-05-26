@@ -1,0 +1,65 @@
+.heading {
+  text-decoration: underline;
+}
+
+.heading del {
+  opacity: 0.19;
+}
+
+.heading del::before,
+.heading del::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.heading del::before {
+  content: ' [deletion start] ';
+}
+
+.heading del::after {
+  content: ' [deletion end] ';
+}
+.tagline {
+  font-size: 0.8rem;
+}
+
+.contact,
+.contact > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  padding-block: 10px;
+}
+
+.contact input,
+.contact textarea {
+  margin-top: 12px;
+}
+.contact input {
+  height: 35px;
+}
+.contact textarea {
+  padding: 25px;
+}
+
+.contact button {
+  background: none;
+  outline: none;
+  border: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: fit-content;
+  padding: 12px 16px;
+}
+.contact button:focus-visible {
+  outline: 2px dashed black;
+  outline-offset: 2px;
+}
+

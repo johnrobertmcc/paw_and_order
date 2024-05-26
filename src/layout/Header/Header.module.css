@@ -1,0 +1,47 @@
+.header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background: white;
+  border-bottom: 1px solid #cccccc30;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  transition: all 0.15s linear;
+  box-shadow: 0px -10px 12px 2px #cccccc70;
+  z-index: 999;
+}
+
+.detached {
+  height: 80px;
+  padding-block: 0;
+}
+
+.header * {
+  color: white;
+}
+
+.link {
+  height: 100%;
+  position: relative;
+  width: 90px;
+}
+
+.link:focus-visible {
+  outline: 2px dashed black;
+  outline-offset: -2px;
+}
+
+.link > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
